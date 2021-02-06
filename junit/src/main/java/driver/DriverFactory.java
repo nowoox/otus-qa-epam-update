@@ -18,7 +18,8 @@ public class DriverFactory {
 
         ChromeOptions options = new ChromeOptions();
         //options.addArguments("--headless", "--silent");
-        options.addArguments("--start-maximized");
+        //options.addArguments("--start-fullscreen");
+        options.addArguments("--kiosk");
         System.setProperty("webdriver.chrome.silentOutput", "true");
         driver.set(new ChromeDriver(options));
 
